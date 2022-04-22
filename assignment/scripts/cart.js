@@ -19,6 +19,13 @@ console.log(`${basket}`);
    }
 }
 console.log(listItem());
+ 
+function empty(){
+    basket.length = 0;
+    return basket;
+}
+console.log(empty());
+
 
 const maxItems = 5;
 function isFull(){
@@ -41,5 +48,6 @@ function removeItem(item){
 }
 console.log('This item was removed:', removeItem());
 console.log(`${basket}`);
+
 // Make sure to test all functions here in the JS file!
 // We want to see how you are testing your code!!!
